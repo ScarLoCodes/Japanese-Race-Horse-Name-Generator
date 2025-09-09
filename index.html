@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Japanese Race Horse Name Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+    <div class="row p-3">
+        <h1>&#128014; Japanese Race Horse Name Generator</h1>
+    </div>
+    <div class="row p-3">
+        <p class="d-inline-flex gap-1">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#Settings" aria-expanded="false" aria-controls="Settings">
+                Settings
+            </button>
+            <button class="btn btn-primary" type="button" onclick="generateNames()">
+                Generate Names
+            </button>
+        </p>
+        <div class="collapse" id="Settings">
+            <div class="card card-body">
+                <form id="SettingsForm">
+                    <div class="mb-3">
+                        <label for="SettingsForm" class="form-label">Number of Names</label>
+                        <input type="number" class="form-control" id="NumOfNamesInput" value="10">
+                    </div>
+                    <div class="mb-3">
+                        <label for="SettingsForm" class="form-label">First Name Override</label>
+                        <textarea class="form-control" id="FirstNameAddinsInput" rows="3"></textarea>
+                        <span>Separate multiple entries with a comma</span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="SettingsForm" class="form-label">Second Name Override</label>
+                        <textarea class="form-control" id="SecondNameAddinsInput" rows="3"></textarea>
+                        <span>Separate multiple entries with a comma</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <h3>Names</h3>
+    <div class="row">
+        <ul id="NamesList" class="list-group">
+            <li class="list-group-item">Your Names will appear here!</li>
+        </ul>
+    </div>
+    <div class="row p-3">
+        <a href="#"><button class="btn btn-primary" type="button">To Top</button></a>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="RaceHorseNames.js"></script>
+</body>
+</html>
+
+
